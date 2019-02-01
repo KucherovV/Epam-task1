@@ -1,0 +1,32 @@
+﻿@model IEnumerable<task1.Models.Article>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="wrapper">
+
+    <div class="mainBody">
+        @foreach (var item in Model)
+        {
+            <div class="article">
+                <b>@item.Name</b>
+                <p>@item.Date.ToShortDateString()</p>
+                <p>@item.Text</p>
+            </div>
+            <hr />
+        }
+    </div>
+
+    <div class="right-sidebar">
+        <ul>
+            @Html.ActionLink("To main", "Index", "Blog")
+            @Html.ActionLink("Guest Room", "AddFeedback", "Blog")
+            @Html.ActionLink("Form", "Form", "Blog")
+        </ul>
+    </div>
+
+
+</div>

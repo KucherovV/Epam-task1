@@ -1,0 +1,28 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: red;
+    background-image: url('tcq971bd0i6y.png');
+    height: 700px;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainBody{
+    width: 30%;
+    outline: 1px solid red;
+    display: inline-block;
+}
+
+.right-sidebar {
+    display: inline-block;
+    outline: 1px solid green;   
+    float: right;
+}

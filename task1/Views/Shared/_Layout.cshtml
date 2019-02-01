@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Blog</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/BlogStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <p id="top">My blog</p>
+    </header>
+    <div class="wrapper">
+        @Html.ActionLink("back to main", "Index", "Blog")
+        @RenderBody()
+
+        <footer>
+            <div class="copyright">
+                <p>Bla bla bla </p>
+            </div>
+            <div class="backToTop">
+                <a href="#top">Back to top</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
